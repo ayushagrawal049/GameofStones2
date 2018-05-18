@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".stone0"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:id="@+id/lay"
+        android:background="@drawable/welcome">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:text="START YOUR ADVENTURE AND HUNT ALL THE INFINITY STONES"
+            android:textColor="#FFFF"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:id="@+id/te"
+            android:textSize="27sp"
+            android:text="PRESS 'HUNT STONES' TO START"
+            android:textColor="#FFFF"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:textColor="#000"
+        android:onClick="a"
+        android:text="HUNT STONES"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/welcome"
+
+        android:layout_weight="4"
+        >
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="  Stones in your Gauntlet:-"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:text=" "
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/a7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:background="#FF9800"
+
+        android:text="Go Back In Time" />
+</LinearLayout>

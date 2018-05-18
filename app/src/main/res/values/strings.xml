@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Game of Stones</string>
+    <string name="power1">YOU HAVE GOT POWER STONE</string>
+    <string name="power2">YOU HAVE GOT SPACE STONE</string>
+    <string name="power3">YOU HAVE GOT TIME STONE</string>
+    <string name="power4">YOU HAVE GOT REALITY STONE</string>
+    <string name="power5">YOU HAVE GOT SOUL STONE</string>
+    <string name="power6">YOU HAVE GOT MIND STONE</string>
+    <string name="start">START YOUR ADVENTURE AND HUNT ALL THE INFINITY STONES</string>
+</resources>
