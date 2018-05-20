@@ -1,6 +1,7 @@
 package com.gmail.ayushagrawal049.gameofstones;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -10,12 +11,19 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-public class stone0 extends AppCompatActivity {
+public class stone0 extends AppCompatActivity
+
+{
+    View v;
+    View s;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stone0);
+        displayinfo(v);
+
 
     }
 
@@ -25,6 +33,53 @@ public class stone0 extends AppCompatActivity {
     }
     public void c(View view) {
         dis(q);
+    }
+    private void saveinfo(View view){
+        TextView a2;
+        TextView a3;
+        TextView a4;
+        TextView a5;
+        TextView a6;
+        TextView a7;
+        a2 = (TextView) findViewById(R.id.a2);
+        a3 = (TextView) findViewById(R.id.a3);
+        a4 = (TextView) findViewById(R.id.a4);
+        a5 = (TextView) findViewById(R.id.a5);
+        a6 = (TextView) findViewById(R.id.a6);
+        a7 = (TextView) findViewById(R.id.a7);
+        SharedPreferences pref = getSharedPreferences("pref", 0);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("t1",a2.getText().toString());
+        editor.putString("t2",a3.getText().toString());
+        editor.putString("t3",a4.getText().toString());
+        editor.putString("t4",a5.getText().toString());
+        editor.putString("t5",a6.getText().toString());
+        editor.putString("t6",a7.getText().toString());
+        editor.apply();
+
+    }
+    private void displayinfo(View view){SharedPreferences pref = getSharedPreferences("pref", 0);
+    String b1 = pref.getString("t1","");
+        String b2 = pref.getString("t2","");
+        String b3 = pref.getString("t3","");
+        String b4 = pref.getString("t4","");
+        String b5 = pref.getString("t5","");
+        String b6 = pref.getString("t6","");
+        TextView t11 = (TextView)findViewById(R.id.a2);
+        t11.setText(b1);
+        TextView t12 = (TextView)findViewById(R.id.a3);
+        t12.setText(b2);
+        TextView t13 = (TextView)findViewById(R.id.a4);
+        t13.setText(b3);
+        TextView t14 = (TextView)findViewById(R.id.a5);
+        t14.setText(b4);
+        TextView t15 = (TextView)findViewById(R.id.a6);
+        t15.setText(b5);
+        TextView t16 = (TextView)findViewById(R.id.a7);
+        t16.setText(b6);
+
+
+
     }
 Layout view;
     private void display(int a) {
@@ -37,6 +92,8 @@ Layout view;
            t.setText("    Power Stone");
            TextView tv19 = (TextView)findViewById(R.id.te);
            tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+        saveinfo(s);
+
 
 
            if(q%3!=0){
@@ -69,6 +126,8 @@ Layout view;
             t.setText("    Space Stone");
             TextView tv19 = (TextView)findViewById(R.id.te);
             tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+            saveinfo(s);
+
             if(q%2!=0){
                 q=2*q;
             }
@@ -100,6 +159,7 @@ Layout view;
             t.setText("    Time Stone");
             TextView tv19 = (TextView)findViewById(R.id.te);
             tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+            saveinfo(s);
             if(q%5!=0){
                 q=5*q;
             }
@@ -130,6 +190,7 @@ Layout view;
             t.setText("    Reality Stone");
             TextView tv19 = (TextView)findViewById(R.id.te);
             tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+            saveinfo(s);
             if(q%7!=0){
                 q=7*q;
             }
@@ -160,6 +221,8 @@ Layout view;
             t.setText("    Soul Stone");
             TextView tv19 = (TextView)findViewById(R.id.te);
             tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+            saveinfo(s);
+
             if(q%11!=0){
                 q=11*q;
             }
@@ -190,6 +253,7 @@ Layout view;
             t.setText("    Mind Stone");
             TextView tv19 = (TextView)findViewById(R.id.te);
             tv19.setText("PRESS 'HUNT STONES' TO CONTINUE");
+            saveinfo(s);
             if(q%13!=0){
                 q=13*q;
             }
